@@ -34,16 +34,18 @@
 					<label for="exampleInputPassword1">Re-Type Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
 				</div>
-				Payment Method: 
-					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard1" id="creditCard1" required/>
+<!-- payment --><div class="form-group">
+					<label>Payment Method</label>
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard1" id="creditCard1" placeholder="1234" required/>
 					-
-					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard2" id="creditCard2" required/>
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard2" id="creditCard2" placeholder="1234" required/>
 					-
-					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard3" id="creditCard3" required/>
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard3" id="creditCard3" placeholder="1234" required/>
 					-
-					<input class="inputCard" type="number" min="1000" max="9999"  name="creditCard4" id="creditCard4" required/>
-					<br><br>
-				Card Expiration:
+					<input class="inputCard" type="number" min="1000" max="9999"  name="creditCard4" id="creditCard4" placeholder="1234" required/>
+				</div>
+<!-- Expiration --><div class="form-group">
+					<label>Card Expiration</label>
 					<select name='expireMM' id='expireMM'>
 						<option value=''>Month</option>
 						<option value='01'>Janaury</option>
@@ -61,11 +63,12 @@
 					</select> 
 					<select name='expireYY' id='expireYY'>
 						<option value=''>Year</option>
-						<option value='10'>2010</option>
-						<option value='11'>2011</option>
-						<option value='12'>2012</option>
+						<option value='10'>2016</option>
+						<option value='11'>2017</option>
+						<option value='12'>2018</option>
 					</select> 
-					<input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/><br><br>
+					<input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
