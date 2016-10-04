@@ -3,9 +3,75 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
 </head>
 <body>
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn">Open Modal</button>
 
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div></div>
+		<div class="modal-content">
+			<span class="close">x</span>
+		  	<form action="" >
+<!-- name -->	<div class="form-group">
+					<label for="exampleInputEmail1">Name</label>
+					<input type="text" class="form-control" placeholder="Name" required autofocus/>
+				</div>
+<!-- email -->	<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+				</div>
+<!-- password --><div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+				</div>
+<!-- password --><div class="form-group">
+					<label for="exampleInputPassword1">Re-Type Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+				</div>
+				Payment Method: 
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard1" id="creditCard1" required/>
+					-
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard2" id="creditCard2" required/>
+					-
+					<input class="inputCard" type="number" min="1000" max="9999" name="creditCard3" id="creditCard3" required/>
+					-
+					<input class="inputCard" type="number" min="1000" max="9999"  name="creditCard4" id="creditCard4" required/>
+					<br><br>
+				Card Expiration:
+					<select name='expireMM' id='expireMM'>
+						<option value=''>Month</option>
+						<option value='01'>Janaury</option>
+						<option value='02'>February</option>
+						<option value='03'>March</option>
+						<option value='04'>April</option>
+						<option value='05'>May</option>
+						<option value='06'>June</option>
+						<option value='07'>July</option>
+						<option value='08'>August</option>
+						<option value='09'>September</option>
+						<option value='10'>October</option>
+						<option value='11'>November</option>
+						<option value='12'>December</option>
+					</select> 
+					<select name='expireYY' id='expireYY'>
+						<option value=''>Year</option>
+						<option value='10'>2010</option>
+						<option value='11'>2011</option>
+						<option value='12'>2012</option>
+					</select> 
+					<input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/><br><br>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="modal.js"></script>
 </body>
 </html>
