@@ -52,13 +52,20 @@
 								</div>
 			<!-- payment -->	<div class="form-group">
 									<label>Payment Method</label>
-									<input class="form-inline" type="number" min="1000" max="9999" name="creditCard1" id="creditCard1" placeholder="1234" required/>
-									-
-									<input class="form-inline" type="number" min="1000" max="9999" name="creditCard2" id="creditCard2" placeholder="1234" required/>
-									-
-									<input class="form-inline" type="number" min="1000" max="9999" name="creditCard3" id="creditCard3" placeholder="1234" required/>
-									-
-									<input class="form-inline" type="number" min="1000" max="9999"  name="creditCard4" id="creditCard4" placeholder="1234" required/>
+									<div class="row">
+										<div class="col-xs-3" style="padding: 0;">
+											<input class="form-control" type="text" min="1000" max="9999" name="creditCard1" id="creditCard1" maxlength="4" placeholder="1234" required/>
+										</div>
+										<div class="col-xs-3" style="padding: 0;">
+											<input class="form-control" type="text" min="1000" max="9999" name="creditCard2" id="creditCard2" maxlength="4" placeholder="1234" required/>
+										</div>
+										<div class="col-xs-3" style="padding: 0;">
+											<input class="form-control" type="text" min="1000" max="9999" name="creditCard3" id="creditCard3" maxlength="4" placeholder="1234" required/>
+										</div>
+										<div class="col-xs-3" style="padding: 0;">
+											<input class="form-control" type="text" min="1000" max="9999"  name="creditCard4" id="creditCard4" maxlength="4" placeholder="1234" required/>
+										</div>
+									</div>
 								</div>
 			<!-- Expiration -->		<div class="form-group">
 									<label>Card Expiration</label>
