@@ -1,16 +1,25 @@
-var coffee = angular.module('app1', []);
+var express = require("express");
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
-coffee.controller('ctrl1', function($scope) {
+var appRoutes = require('./routes/app');
 
+var app = express();
 
-	$scope.coffeeClick = function() {
-		//When clicked it will route to the coffee product page'
+//connect to mongoose
+mongoose.connect('mongodb://localhost/coffee');
+var db = mongoose.connection;
 
-	}
-	$scope.teaClick = function() {
-		//When clicked it will route to the tea product page'
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-		
-	}
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
 
-});
+app.use('/', appRoutes);
+
+module.exports = app;

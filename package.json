@@ -1,0 +1,25 @@
+{
+  "name": "house_of_coffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidli01/coffee.git"
+  },
+  "author": "David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidli01/coffee/issues"
+  },
+  "homepage": "https://github.com/davidli01/coffee#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.3"
+  }
+}
